@@ -13,16 +13,12 @@ int mini(int *a,int n,int strt,int end)
 	}
 	return ind;
 }
-int counting(int *a,int n,int strt,int end,int ind)
-{
-	return a[ind] * (ind -strt+1) * (end -ind);
-}
 void count(int *a,int n,int strt,int end)
 {
 	if(strt<end)
 	{
 	int in = mini(a,n,strt,end);
-	c+=counting(a,n,strt,end,in);
+	c+=a[in] * (in -strt+1) * (end -in);
 	count(a,n,strt,in);
 	count(a,n,in+1,end); 	
 	}
