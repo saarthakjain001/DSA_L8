@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 char st[1000];int t=-1;
 void push(char x)
 {
