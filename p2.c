@@ -47,6 +47,7 @@ int main()
 			curr_time=mini;
 			p[ind]=1;
 			wait+=(curr_time+a[ind])- b[ind];
+			curr_time+=a[ind];
 		}
 	}
 	printf("%d",wait/n);
